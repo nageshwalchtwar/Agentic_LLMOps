@@ -491,7 +491,6 @@ with c2:
     fig.add_trace(go.Bar(name="Confidence", x=names, y=confs, marker_color="#34d399",
                          text=[f"{v:.3f}" for v in confs], textposition="outside"))
     fig.add_trace(go.Bar(name="Response Length", x=names, y=rlens, marker_color="#818cf8",
-                         yaxis="y2",
                          text=[f"{v}" for v in rlens], textposition="outside"))
     fig.update_layout(**PLOTLY_LAYOUT,
                       title=dict(text="Confidence & Response Length", font=dict(size=13, color="#8ab4d4")),
