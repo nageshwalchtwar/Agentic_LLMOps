@@ -203,9 +203,11 @@ GROK_API_URL = "https://api.x.ai/v1/chat/completions"
 # ─────────────────────────────────────────────
 with st.sidebar:
     st.markdown("### ⚡ Configuration")
+    # Restrict to only two SLMs for memory efficiency
+    SLM_MODELS = ["DistilGPT2", "GPT2"]
     selected_models = st.multiselect(
         "Models",
-        list(MODELS.keys()),
+        SLM_MODELS,
         default=["DistilGPT2"],
     )
     drift_level = st.select_slider(
