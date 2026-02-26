@@ -495,7 +495,7 @@ with c2:
                       title=dict(text="Confidence & Response Length", font=dict(size=13, color="#8ab4d4")),
                       barmode="overlay",
                       yaxis=dict(title="Confidence", gridcolor="#1a3050"),
-                      yaxis2=dict(title="Tokens", overlaying="y", side="right", showgrid=False, color="#818cf8"),
+                      yaxis2=dict(title="Tokens", overlaying="y", side="right", showgrid=False),
                       height=320, legend=dict(orientation="h", y=1.12))
     st.plotly_chart(fig, use_container_width=True)
 
