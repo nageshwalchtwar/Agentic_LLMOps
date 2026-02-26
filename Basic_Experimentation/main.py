@@ -492,11 +492,15 @@ with c2:
                          text=[f"{v:.3f}" for v in confs], textposition="outside"))
     fig.add_trace(go.Bar(name="Response Length", x=names, y=rlens, marker_color="#818cf8",
                          text=[f"{v}" for v in rlens], textposition="outside"))
-    fig.update_layout(**PLOTLY_LAYOUT,
-                      title=dict(text="Confidence & Response Length", font=dict(size=13, color="#8ab4d4")),
-                      barmode="overlay",
-                      yaxis=dict(title="Confidence", gridcolor="#1a3050"),
-                      height=320, legend=dict(orientation="h", y=1.12))
+    layout_overrides = dict(
+        title=dict(text="Confidence & Response Length", font=dict(size=13, color="#8ab4d4")),
+        barmode="overlay",
+        yaxis=dict(title="Confidence", gridcolor="#1a3050"),
+        height=320,
+        legend=dict(orientation="h", y=1.12),
+    )
+    merged_layout = {**PLOTLY_LAYOUT, **layout_overrides}
+    fig.update_layout(**merged_layout)
     st.plotly_chart(fig, use_container_width=True)
 
 # ─────────────────────────────────────────────
