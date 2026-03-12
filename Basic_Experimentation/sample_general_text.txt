@@ -1,0 +1,5 @@
+# General Text Corpus Sample
+
+The quick brown fox jumps over the lazy dog. This sentence is often used to test typing speed and keyboard layouts. In everyday life, people encounter a variety of texts, from emails and social media posts to books and advertisements.
+
+Reading habits vary widely, and the content consumed can range from technical manuals to fictional stories. Understanding the diversity of text types is important for language models and their ability to generalize.

@@ -1,0 +1,14 @@
+# Technical Documentation Sample
+
+TCP (Transmission Control Protocol) is a core protocol of the Internet Protocol Suite. It provides reliable, ordered, and error-checked delivery of data between applications running on hosts communicating via an IP network.
+
+Key Features:
+- Connection-oriented communication
+- Reliable data transfer
+- Flow control
+- Congestion control
+
+Example Use Case:
+TCP is used for web browsing, email, file transfer, and many other network services.
+
+Reference: RFC 793
