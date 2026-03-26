@@ -2,6 +2,7 @@ streamlit
 torch
 plotly
 transformers
+datasets
 scikit-learn
 pandas
 numpy
