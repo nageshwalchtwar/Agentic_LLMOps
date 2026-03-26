@@ -1,9 +1,9 @@
 streamlit
 torch
-plotly
 transformers
 datasets
-scikit-learn
 pandas
 numpy
+plotly
+scikit-learn
 requests
